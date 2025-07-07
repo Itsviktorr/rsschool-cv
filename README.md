@@ -1,1 +1,1 @@
-# https://itsviktorr.github.io/rsschool-cv-html/
+# https://itsviktorr.github.io/rsschool-cv
