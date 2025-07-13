@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>My CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.ico">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is a minimal HTML template.</p>
+  <header>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+        <li class="nav-item"><a href="#myinfo" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#code-example" class="nav-link">Code Example</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <section class="section-profile" id="profile">
+        <img src="assets/profile.jpg" alt="profile picture" class="profile-logo">
+        <div class="profile-title">
+          <div class="profile-name">
+            <h1>Viktor Temnikov</h1>
+          </div>
+        </div>
+        <p class="profile-description">Junior Front-End Developer</p>
+      </section>
+    </div>
+    <section class="section-contacts" id="contacts">
+      <div class="contacts-container">
+        <h2>Contacts</h2>
+        <div class="contacts-pair">
+          <ul class="contacts-list">
+            <li>Location</li>
+            <li>Phone</li>
+            <li>Email</li>
+            <li>Github</li>
+          </ul>
+          <ul class="contacts-info">
+            <li>Saint-Petersburg</li>
+            <li><a href="tel:+79835351001">+7 983 535 1001</a></li>
+            <li><a href="mailto:victortemnikov@gmail.com">victortemnikov@gmail.com</a></li>
+            <li><a href="https://github.com/itsviktorr" target="_blank">itsviktorr</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-myinfo" id="myinfo">
+      <h2>About Me</h2>
+      <p class="myinfo-text">I hold a higher education degree in Law, and I am currently making a career transition into
+        the field of
+        Information Technology. Although my background is not technical, I am highly motivated and eager to learn. I
+        have always been passionate about technology and design, and that’s what led me to explore programming as a
+        new professional path. I find the process of creating digital interfaces fascinating — especially how code
+        can
+        shape user experience and visual presentation. I’m currently starting from scratch and focusing on learning
+        JavaScript as my first programming language. I chose JavaScript because it combines logic with creativity,
+        allowing me to understand the fundamentals of web development while also getting closer to UI/UX design. In
+        addition to JavaScript, I am gradually learning HTML and CSS, building small projects, and experimenting
+        with
+        web page layouts and interactive elements. My goal is to eventually become a front-end developer who can
+        contribute not only with code but with an understanding of design thinking and user-centric development. I'm
+        also starting to explore tools like Git,GitHub, and working with Markdown, which helps me document my
+        progress
+        and structure my learning journey. I may be a beginner in programming, but I bring with me strong analytical
+        thinking, responsibility, and a desire to constantly improve — skills that served me well in the legal
+        profession and that I now apply to my studies in IT. I believe that with persistence, curiosity, and
+        structured learning, I can grow into a confident and creative developer.</p>
+    </section>
+    <section class="section-myskills" id="myskills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li class="skills-item">
+          <img src="assets/html.png" alt="html" class="skill-logo">
+          <div class="skill-name">HTML5</div>
+        </li>
+        <li class="skills-item">
+          <img src="assets/js.png" alt="html" class="skill-logo">
+          <div class="skill-name">JavaScript Basics</div>
+        </li>
+        <li class="skills-item">
+          <img src="assets/git.png" alt="html" class="skill-logo">
+          <div class="skill-name">Git, GitHub</div>
+        </li>
+        <li class="skills-item">
+          <img src="assets/vs.png" alt="html" class="skill-logo">
+          <div class="skill-name">VS Code</div>
+        </li>
+      </ul>
+    </section>
+    <section class="section-code-example" id="code-example">
+      <h2>Code Example</h2>
+      <pre>
+        let arr = [1, 2, 3, 4, 5, 6];
+
+        let firstHalfSum = 0;
+        let secondHalfSum = 0;
+
+        let half = Math.floor(arr.length / 2);
+
+        for (let i = 0; i &lt; arr.length; i++) { 
+          if (i &lt; half) { 
+            firstHalfSum +=arr[i]; 
+          } 
+          else { 
+            secondHalfSum
+            +=arr[i]; 
+          } 
+        } 
+        
+        let result=firstHalfSum / secondHalfSum; 
+          
+        console.log("Сумма первой половины:",firstHalfSum); 
+        console.log("Сумма второй половины:", secondHalfSum); 
+        console.log("Результат деления:",result);
+      </pre>
+    </section>
+    <section class="section-education" id="education">
+      <h2>Education</h2>
+      <p>East Siberian State University of Technology and Management (ESSUTM) / Lawyer</p>
+    </section>
+    <section class="section-english" id="english">
+      <h2>English</h2>
+      <p>A2 -- Pre-intermediate</p>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+       <h5>© 2025</h5>
+        <a href="https://github.com/itsviktorr" class="github-link" target="_blank" rel="noopener noreferrer" id="nickname">
+          itsviktorr
+        </a>
+        <a href="https://rs.school/courses/javascript-ru" class="logo" target="_blank" rel="noopener noreferrer">
+          <img src="assets/rs-school-logo.svg" alt="Rolling Scopes School logo" style="height: 30px;">
+        </a>
+    </div>
+  </footer>
 </body>
+
 </html>
